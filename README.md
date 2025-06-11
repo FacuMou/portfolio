@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Portafolio de Desarrollo – Facundo Mourelle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio personal. Aquí muestro una selección de proyectos que reflejan mi experiencia como desarrollador de software, con enfoque en programación de sistemas y desarrollo backend.
 
-Currently, two official plugins are available:
+## 🛠 Tecnologías y Lenguajes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Lenguajes:** C, Java, Python, Haskell, TypeScript
+- **Frontend:** React, Vite
+- **Otros:** Git, Bash, 
 
-## Expanding the ESLint configuration
+## 📁 Contenidos del Portafolio
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Proyectos de **C, C++ y Java** que muestran lógica de bajo nivel, estructuras de datos, y programación orientada a objetos.
+- Experimentos y ejercicios en **Haskell**, con énfasis en programación funcional pura.
+- Aplicaciones web con **React + Vite**, centradas en UI moderna y rendimiento.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Objetivo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este portafolio sirve como una ventana a mis habilidades y evolución como desarrollador. Mi enfoque es escribir código claro, eficiente y mantenible, adaptándome a diferentes paradigmas de programación.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📫 Contacto
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Si deseas contactarme, puedes hacerlo a través de mi mail: facundomourelle9@gmail.com, o a traves de mi perfil de LinkedIn: https://www.linkedin.com/in/facundo-mourelle-283a17245
+
+---
+
+Gracias por visitar.
