@@ -1,4 +1,6 @@
 {
   "greeting": "Welcome to my portfolio",
-  "about": "I'm a backend developer"
+  "about": "Backend developer",
+  "contact": "Connect with me",
+  "description": "I am a develeper focused on backend technologies. I am passionate about finding optimum and innovative solutions to problems. Everything has a solution, you just need to find it."
 }
