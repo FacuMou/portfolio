@@ -5,10 +5,9 @@ on:
     branches:
       - main
 jobs:
-  job-name:
+  deploy:
     permissions:
       contents: write
-  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
