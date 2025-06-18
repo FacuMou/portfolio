@@ -89,7 +89,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
   );
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const intervalRef = useRef<number | undefined>();
+  const intervalRef = useRef<number | undefined>(null);
 
   const swap = useCallback(() => {
     if (order.length < 2 || isAnimating) return;

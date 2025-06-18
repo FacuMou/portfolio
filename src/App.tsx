@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
 import { IoLanguage } from "react-icons/io5";
 import CardSwap, { Card } from './components/CardSwap.tsx';
-import Particles from './components/Background.tsx';
+import BgAnimation from './components/Background.tsx';
+import Contact from './components/Contact.tsx';
 import './i18n.ts'
 import { useTranslation } from 'react-i18next';
 
@@ -22,44 +21,20 @@ const App: React.FC = () => {
     }
   };
 
-  const socialLinks = [
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/facundo-mourelle-283a17245',
-      icon: <FaLinkedin className="w-6 h-6" />
-    },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/FacuMou',
-      icon: <FaGithub className="w-6 h-6" />
-    },
-    {
-      name: 'Email',
-      url: 'mailto:facundomourelle9@gmail.com',
-      icon: <SiGmail className="w-6 h-6" />
-    },
-  ];
-
   return (
-    <div className="relative min-h-screen overflow-hidden ">
-      <div className="relative -z-20 bg-gradient-to-b from-[#0d1b2a] to-[#415a77]">
-        {/* Background animation */}
-        <Particles
-          particleColors={['#ffffff', '#ffffff']}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false} />
-
-        <main className="grid grid-cols-2">
+    <div className="overflow-hidden">
+      {/* Background color */}
+      <div className="fixed inset-0 -z-20 bg-gradient-to-b from-[#0d1b2a] to-[#415a77] "> </div>
+      {/* Background animation */}
+      <BgAnimation />
+      {/* Content */}
+      <div className="relative z-10 min-h-screen">
+        <main className="grid grid-cols-2 ">
 
           {/* Left Column - Personal Info */}
           <div className="">
             {/* Name */}
-            <h1 className="text-[#fdf0d5]">
+            <h1 className="font-mono text-[#EEEEFF] text-xl antialiased">
               Facundo Mourelle
             </h1>
             {/* Description */}
@@ -69,18 +44,7 @@ const App: React.FC = () => {
             {/* Contact Section */}
             <h3 className="text-xl font-semibold text-gray-200">{t('contact')}</h3>
             <div className="flex flex-wrap gap-4">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-                >
-                  {link.icon}
-                  <span className="font-medium"> {link.name} </span>
-                </a>
-              ))}
+              <Contact />
             </div>
           </div>
 
@@ -91,19 +55,19 @@ const App: React.FC = () => {
               <IoLanguage className="ml-auto h-full w-auto text-gray-300" />
               <button
                 onClick={toggleLanguage}
-                className={""}
+                className={"text-white"}
               >
                 Idioma
               </button>
             </div>
             {/* Projects Component */}
-            <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+            <div className="flex items-center justify-center">
               <div style={{ height: '0px', position: 'relative' }}>
                 <CardSwap
-                  width={400}
-                  height={260}
-                  cardDistance={50}
-                  verticalDistance={60}
+                  width={450}
+                  height={300}
+                  cardDistance={70}
+                  verticalDistance={100}
                   delay={4000}
                   pauseOnHover={true}
                   onCardClick={handleCardClick}
