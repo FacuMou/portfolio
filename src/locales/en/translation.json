@@ -1,6 +1,16 @@
 {
-  "greeting": "Welcome to my portfolio",
-  "about": "Backend developer",
-  "contact": "Connect with me",
-  "description": "I am a develeper focused on backend technologies. I am passionate about finding optimum and innovative solutions to problems. Everything has a solution, you just need to find it."
+  "contact": "Contact me",
+  "description": "I'm a backend developer focused on building maintainable, high-performance systems. I specialize in business logic, API design, and structured data management. I'm interested in ensuring solutions are robust, scalable, and efficient, both in execution and long-term maintenance.", 
+
+  "portfolio-title": "My personal portfolio",
+  "portfolio-desc": "Personal portfolio to showcase my information and projects.",
+
+  "switcher-title": "El Switcher - Boardgame",
+  "switcher-desc": "Multiplayer game up to 4 players which objective is to form figures with movement cards",
+
+  "refactor-title": "El Switcher Refactored (WIP)",
+  "refactor-desc": "Project refactoring, better optimized and more polished.",
+
+  "omnet-title": "Omnet++ packet routing",
+  "omnet-desc": "Simulations of routing algorithms and protocols, focused on optimization and data analysis"
 }

@@ -20,6 +20,7 @@ export interface CardSwapProps {
   onCardClick?: (idx: number, url?: string) => void;
   skewAmount?: number;
   easing?: "linear" | "elastic";
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -33,7 +34,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
     <div
       ref={ref}
       {...rest}
-      className={`absolute top-1/2 left-1/2 rounded-xl border border-gray-300 bg-white shadow-lg p-4 cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-105 ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
+      className={`grid absolute top-1/2 left-1/2 rounded-xl border-2 shadow-lg p-4 cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-105 ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
     >
       {children}
       {repoUrl && (
@@ -78,6 +79,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
   skewAmount = 3,
   easing = "elastic",
   children,
+  className,
 }) => {
   const childArr = useMemo(
     () => Children.toArray(children) as React.ReactElement<CardProps>[],
@@ -175,9 +177,10 @@ const CardSwap: React.FC<CardSwapProps> = ({
       : child;
   });
 
+
   return (
     <div
-      className="relative"
+      className={`relative ${className ?? ''}`}
       style={{
         width,
         height,

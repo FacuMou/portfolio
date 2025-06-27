@@ -134,3 +134,41 @@
       </div>
     </div>
   );
+
+
+
+
+
+                  <Card
+                    customClass="bg-green-50 border-green-200"
+                    repoUrl="https://github.com/yourusername/task-management-app"
+                  >
+                    <h3 className="text-xl font-bold text-green-800 mb-3">Task Manager</h3>
+                    <p className="text-green-600 text-sm mb-2">
+                      Collaborative task management with real-time updates.
+                    </p>
+                    <div className="text-xs text-green-500">React • Socket.io • PostgreSQL</div>
+                  </Card>
+
+                  <Card
+                    customClass="bg-purple-50 border-purple-200"
+                    repoUrl="https://github.com/yourusername/ai-chatbot"
+                  >
+                    <h3 className="text-xl font-bold text-purple-800 mb-3">AI Chatbot</h3>
+                    <p className="text-purple-600 text-sm mb-2">
+                      Intelligent chatbot with natural language processing.
+                    </p>
+                    <div className="text-xs text-purple-500">Python • OpenAI • FastAPI</div>
+                  </Card>
+
+                  <Card
+                    customClass="bg-orange-50 border-orange-200"
+                    repoUrl="https://github.com/yourusername/weather-dashboard"
+                  >
+                    <h3 className="text-xl font-bold text-orange-800 mb-3">Weather Dashboard</h3>
+                    <p className="text-orange-600 text-sm mb-2">
+                      Real-time weather data visualization and forecasting.
+                    </p>
+                    <div className="text-xs text-orange-500">Vue.js • Chart.js • Weather API</div>
+                  </Card>
+
